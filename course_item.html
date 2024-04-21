@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название курса</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
+
+    <meta property="og:title" content="Tender">
+    <meta property="og:description" content="Название курса">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:url" content="https://example.com/">
+</head>
+<body>
+<header>
+    <div class="container header__section">
+        <div class="logo__section">
+            <a href="index.html">
+                <img alt="logo" src="static/Logo.svg" class="logo">
+            </a>
+            <p class="logo__text">Еженедельный специализированный журнал</p>
+        </div>
+        <div class="contact__section">
+            <a>Обратная связь</a>
+            <a>Контакты</a>
+        </div>
+    </div>
+    <nav class="navigation__section">
+        <div class="container">
+            <div class="mobile-menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul class="navigation__list">
+                <li class="navigation__item__menu">
+                    <img alt="logo" src="static/Logo.svg" class="menu__logo">
+                    <button class="menu-close"></button>
+                </li>
+                <li class="navigation__item">
+                    <p class="navigation__item__text">
+                        <a href="about.html" class="navigation__item__text">О нас</a>
+                    </p>
+                    <span class="submenu-indicator"></span>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="information.html">Общая информация</a></li>
+                        <li class="submenu__item"><a href="team.html">Наша команда</a></li>
+                        <li class="submenu__item"><a href="permits.html">Разрешительные документы</a></li>
+                        <li class="submenu__item"><a href="photo_gallery.html">Фотогалерея</a></li>
+                    </ul>
+                </li>
+
+                <li class="navigation__item">
+                    <p class="navigation__item__text">
+                        <a href="magazine.html" class="navigation__item__text">Журнал</a>
+                    </p>
+                    <span class="submenu-indicator"></span>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="subscription.html">Подписка</a></li>
+                        <li class="submenu__item"><a href="vdnh_gossnab.html">ВДНХ / ГОССНАБ</a></li>
+                        <li class="submenu__item"><a href="anons.html">Анонс номера</a></li>
+                        <li class="submenu__item"><a href="archive_2021.html">Архив 2022</a></li>
+                        <li class="submenu__item"><a href="archive_2021.html">Архив 2021</a></li>
+                        <li class="submenu__item"><a href="question_answer.html">Вопрос ответ</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <p class="navigation__item__text">
+                        <a href="services.html" class="navigation__item__text">Услуги</a>
+                    </p>
+                    <span class="submenu-indicator"></span>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="courses.html">Курсы</a></li>
+                        <li class="submenu__item"><a href="seminars.html">Семинары</a></li>
+                        <li class="submenu__item"><a href="procurement_support.html">Сопровождение закупок</a>
+                        <li class="submenu__item"><a href="procurement_monitoring.html">Монниторинг закупок</a></li>
+                        <li class="submenu__item"><a href="price.html">Прайс услуг</a></li>
+                        <li class="submenu__item"><a href="contracts.html">Формы договоров</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <p class="navigation__item__text">
+                        <a href="news.html" class="navigation__item__text">Новости</a>
+                    </p>
+                    <span class="submenu-indicator"></span>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="actual_news.html">Актуальное</a></li>
+                        <li class="submenu__item"><a href="partners_news.html">Новости партнеров</a></li>
+                        <li class="submenu__item"><a href="expert_opinions.html">Мнения экспертов</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <p class="navigation__item__text">
+                        <a href='npa.html' class="navigation__item__text">НПА</a>
+                    </p>
+                    <span class="submenu-indicator"></span>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="acts.html">Нормотивно-правовые акты ВЭД</a></li>
+                        <li class="submenu__item"><a href="guidelines.html">Методические рекомендации</a></li>
+                        <li class="submenu__item"><a href="calendar.html">Календарь снабженца</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <p class="navigation__item__text">
+                        <a href='cooperation.html' class="navigation__item__text">Сотрудничество</a>
+                    </p>
+                    <span class="submenu-indicator"></span>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="partners.html">Партнеры РБ</a></li>
+                        <li class="submenu__item"><a href="international_cooperation.html">Международное
+                            сотрудничество</a></li>
+                        <li class="submenu__item"><a href="advertising_magazine.html">Реклама в журнале</a></li>
+                        <li class="submenu__item"><a href="advertising.html">Реклама на сайте</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="overlay"></div>
+            <form class="navigation__search">
+                <input class="search__input" type="text">
+                <button class="search__submit" type="submit"></button>
+            </form>
+        </div>
+
+    </nav>
+</header>
+<main>
+    <div class="main__container">
+        <div class="container container__main container__inform">
+            <section class="hot-links__section">
+                <div class="hot-links__link hot-links__link_subscription">
+                    <span class="hot-links__link__text">Подписка</span></div>
+                <div class="hot-links__link hot-links__link_gos">
+                    <span class="hot-links__link__text">Госснаб</span>
+                </div>
+                <div class="hot-links__link hot-links__link_vdnh">
+                    <span class="hot-links__link__text">ВДНХ</span>
+                </div>
+            </section>
+            <section>
+                <h2 class="section__header section__header_border">Курс повышения квалификации «Управление закупками на
+                    конкурсной основе»</h2>
+
+                <div class="course__information">
+                    <div class="course__information__main">
+                        <h3 class="title">«Управление закупками на
+                            конкурсной основе»</h3>
+                        <ul class="course__points">
+                            <li class="course__point">
+                                <img src="./static/courses/course/clock.png" alt="clock">
+                                <p>
+                                    38 академических часов (5 дней)
+                                </p>
+                            </li>
+                            <li class="course__point">
+                                <img src="./static/courses/course/school-desk.png" alt="school">
+                                <p>Очная (дневная) форма образования с отрывом от производства</p>
+                            </li>
+                            <li class="course__point">
+                                <img src="./static/courses/course/certificate.png" alt="certificate">
+                                <p> Выдача Свидетельства государственного образца о повышении
+                                    квалификации.</p>
+                            </li>
+                        </ul>
+                        <div class="course__price">
+                            <p>Цена: <span>690,0 BYN</span></p>
+                        </div>
+
+                    </div>
+                    <div class="course__information__additional">
+                        <p class="paragraph">
+                            УП «Редакция журнала «Тендер» совместно с Центром управления закупками и продажами
+                            Витебского
+                            государственного технологического университета проводит курс повышения квалификации
+                            руководителей и
+                            специалистов по теме «Управление закупками на конкурсной основе».
+                        </p>
+                        <p class="paragraph">
+                            <span class="bold"> Цель курса - </span> теоретико - практическая подготовка
+                            квалифицированных специалистов в области
+                            закупок, направленная на повышение их профессионального уровня.
+                        </p>
+                        <button class="main__button seminar-btn">
+                            Записаться на курс
+                        </button>
+                    </div>
+                </div>
+                <div class="course-dates">
+                    <h3 class="consumer__header">Примерные даты проведения курсов</h3>
+                    <div class="course-dates__details">
+                        <div class="course-dates__city">
+                            <h3 class="course-dates__city-name">Гродно</h3>
+                            <ul class="course-dates__dates">
+                                <li class="course-dates__date">26-29 марта</li>
+                            </ul>
+                        </div>
+                        <div class="course-dates__city">
+                            <h3 class="course-dates__city-name">Минск</h3>
+                            <ul class="course-dates__dates">
+                                <li class="course-dates__date">9-12 апреля</li>
+                                <li class="course-dates__date">21-24 мая</li>
+                                <li class="course-dates__date">11-14 июня</li>
+                                <li class="course-dates__date">9-12 июля</li>
+                            </ul>
+                        </div>
+                        <div class="course-dates__city">
+                            <h3 class="course-dates__city-name">Орша</h3>
+                            <ul class="course-dates__dates">
+                                <li class="course-dates__date">16-19 апреля</li>
+                            </ul>
+                        </div>
+                        <div class="course-dates__city">
+                            <h3 class="course-dates__city-name">Брест</h3>
+                            <ul class="course-dates__dates">
+                                <li class="course-dates__date">23-26 апреля</li>
+                            </ul>
+                        </div>
+                        <div class="course-dates__city">
+                            <h3 class="course-dates__city-name">Барановичи</h3>
+                            <ul class="course-dates__dates">
+                                <li class="course-dates__date">15-18 мая</li>
+                            </ul>
+                        </div>
+                        <div class="course-dates__city">
+                            <h3 class="course-dates__city-name">Витебск</h3>
+                            <ul class="course-dates__dates">
+                                <li class="course-dates__date">4-7 июня</li>
+                            </ul>
+                        </div>
+                        <div class="course-dates__city">
+                            <h3 class="course-dates__city-name">Могилев</h3>
+                            <ul class="course-dates__dates">
+                                <li class="course-dates__date">25-28 июня</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <h3 class="consumer__header">Кому полезен этот курс?</h3>
+                    <div class="consumers">
+                        <div class="consumer">
+                            <img src="static/courses/course/bos.png" alt="Руководитель">
+                            <h2 class="consumer__title">Руководителям организаций</h2>
+                            <h3 class="question">Хотите оптимизировать процессы закупок в вашей компании?</h3>
+                            <hr class="divider">
+                            <p class="answer">Присоединяйтесь к нашему курсу и получите ключевые знания и навыки для
+                                эффективного управления государственными закупками и закупками на конкурсной основе.
+                                Узнайте, как повысить эффективность закупочных процессов и минимизировать риски для
+                                вашей организации.</p>
+                        </div>
+                        <div class="consumer">
+                            <img src="./static/courses/course/committee.png" alt="Руководитель">
+                            <h2 class="consumer__title">Председателям и членам конкурсных комиссий</h2>
+                            <h3 class="question">Хотите быть уверенными в принятии ключевых решений по
+                                закупкам?</h3>
+                            <hr class="divider">
+                            <p class="answer">Наши курсы помогут вам развить навыки принятия стратегических решений
+                                в области закупок. Узнайте, как правильно оценивать предложения и принимать
+                                обоснованные решения, обеспечивая прозрачность и соблюдение законодательства.</p>
+                        </div>
+                        <div class="consumer">
+                            <img src="./static/courses/course/team-leader.png" alt="Руководитель">
+                            <h2 class="consumer__title">Участникам закупочной деятельности</h2>
+                            <h3 class="question">Хотите расширить свои профессиональные навыки в области
+                                закупок?</h3>
+                            <hr class="divider">
+                            <p class="answer">Присоединяйтесь к курсу, чтобы углубить свои знания о процессах
+                                закупок и научиться эффективно управлять ими. Получите практические навыки и
+                                инструменты, необходимые для успешной работы в сфере закупок.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="consumer__header">Кто ведет курс?</h3>
+                    <div class="instructors-container">
+                        <div class="instructor">
+                            <div class="blue-square"></div>
+                            <img src="./static/team/pers.jpg" alt="Alexander Muravyev" class="instructor-image">
+                            <div class="instructor-details">
+                                <h3 class="instructor-name">Муравьёв Александр Валерьевич</h3>
+                                <p class="instructor-title">Главный редактор журнала «Тендер»</p>
+                                <p class="instructor-experience">Опыт практических закупок более 22 лет (более 600 млн.
+                                    евро).</p>
+                            </div>
+                        </div>
+                        <div class="instructor">
+                            <div class="blue-square"></div>
+                            <img src="./static/team/pers.jpg" alt="Expert 1" class="instructor-image">
+                            <div class="instructor-details">
+                                <h3 class="instructor-name">Новицкая Галина Алексеевна</h3>
+                                <p class="instructor-title">Методист / Опыт</p>
+                                <p class="instructor-experience">Дополнительная информация о преподавателе</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages-container">
+                    <h3 class="consumer__header">Преимущества участия в курсе</h3>
+                    <div class="advantage">
+                        <div class="icon-container">
+                            <img src="./static/courses/course/check-mark.png" alt="check-mark">
+                        </div>
+                        <div class="text-container">
+                            <p class="advantage-title">Глубокие знания и практические навыки</p>
+                            <p class="advantage-description">Обучение основам управления государственными закупками и
+                                конкурсными процедурами.</p>
+                        </div>
+                    </div>
+
+                    <div class="advantage">
+                        <div class="icon-container">
+                            <img src="./static/courses/course/check-mark.png" alt="check-mark">
+                        </div>
+                        <div class="text-container">
+                            <p class="advantage-title">Профессиональная подготовка</p>
+                            <p class="advantage-description">Идеально подходит для руководителей организаций и
+                                участников конкурсных комиссий.</p>
+                        </div>
+                    </div>
+
+                    <div class="advantage">
+                        <div class="icon-container">
+                            <img src="./static/courses/course/check-mark.png" alt="check-mark">
+                        </div>
+                        <div class="text-container">
+                            <p class="advantage-title">Практическое рассмотрение ситуаций</p>
+                            <p class="advantage-description">Анализ реальных кейсов и нормативных актов, регулирующих
+                                закупочную деятельность.</p>
+                        </div>
+                    </div>
+
+                    <div class="advantage">
+                        <div class="icon-container">
+                            <img src="./static/courses/course/check-mark.png" alt="check-mark">
+                        </div>
+                        <div class="text-container">
+                            <p class="advantage-title">Гарантированное свидетельство</p>
+                            <p class="advantage-description">Получите официальное Свидетельство о повышении квалификации
+                                по окончании курса.</p>
+                        </div>
+                    </div>
+
+                    <div class="advantage">
+                        <div class="icon-container">
+                            <img src="./static/courses/course/check-mark.png" alt="check-mark">
+                        </div>
+                        <div class="text-container">
+                            <p class="advantage-title">Опытные преподаватели</p>
+                            <p class="advantage-description">Обучение ведут специалисты с многолетним практическим
+                                опытом и представители профильных организаций.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="consumer__header">Программа курса "Управление закупками на конкурсной основе"</h3>
+                    <p class="paragraph paragraph_no_top_p">
+                        Этот курс разработан с учетом современных требований и вызовов, стоящих перед профессионалами в
+                        области государственных закупок и закупок на конкурсной основе. Мы стремимся обеспечить вас
+                        глубокими знаниями и практическими навыками, необходимыми для эффективного управления закупками
+                        в вашей организации.
+                    </p>
+                    <p class="paragraph">
+                        Программа курса охватывает широкий спектр тем, начиная от основных принципов и понятий
+                        управления закупками, заканчивая практическим рассмотрением конкретных ситуаций и нормативных
+                        актов, регламентирующих деятельность в области закупок.
+                    </p>
+
+                    <div class="course__program">
+                        <div class="course__day">
+                            <div class="course__day__header">
+                                День 1: Введение в управление закупками
+                            </div>
+                            <div class="course__day__container">
+                                <ul class="course__day__items">
+                                    <li class="course__day__item">
+                                        Знакомство с курсом и его структурой
+                                    </li>
+                                    <li class="course__day__item">
+                                        Основные понятия и принципы управления закупками
+                                    </li>
+                                    <li class="course__day__item">
+                                        Роль и значение закупок на конкурсной основе в современном бизнесе
+                                    </li>
+                                    <li class="course__day__item">
+                                        Анализ нормативных правовых актов, регулирующих деятельность в области закупок
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="course__day">
+                            <div class="course__day__header">
+                                День 2: Государственные закупки
+                            </div>
+                            <div class="course__day__container">
+                                <ul class="course__day__items">
+                                    <li class="course__day__item">
+                                        Особенности государственных закупок: законодательство и практика
+                                    </li>
+                                    <li class="course__day__item">
+                                        Процедуры и этапы государственных закупок
+                                    </li>
+                                    <li class="course__day__item">
+                                        Участие организаций в государственных закупках: права и обязанности
+                                    </li>
+                                    <li class="course__day__item">
+                                        Практические задания и кейсы по государственным закупкам
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="course__day">
+                            <div class="course__day__header">
+                                День 3: Закупки за счет собственных средств
+                            </div>
+                            <div class="course__day__container">
+                                <ul class="course__day__items">
+                                    <li class="course__day__item">
+                                        Внутренние закупки: организация и управление
+                                    </li>
+                                    <li class="course__day__item">
+                                        Определение потребностей и составление технического задания
+                                    </li>
+                                    <li class="course__day__item">
+                                        Процедуры и процессы закупок за счет собственных средств
+                                    </li>
+                                    <li class="course__day__item">
+                                        Оптимизация процесса закупок для повышения эффективности и экономии
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="course__day">
+                            <div class="course__day__header">
+                                День 4: Закупки для целей ремонта, реконструкции, строительства
+                            </div>
+                            <div class="course__day__container">
+                                <ul class="course__day__items">
+                                    <li class="course__day__item">
+                                        Особенности и требования к закупкам для целей ремонта, реконструкции,
+                                        строительства
+                                    </li>
+                                    <li class="course__day__item">
+                                        Нормативные акты и правила проведения закупок в данной сфере
+                                    </li>
+                                    <li class="course__day__item">
+                                        Практические примеры и кейсы по закупкам для целей ремонта, реконструкции,
+                                        строительства
+                                    </li>
+                                    <li class="course__day__item">
+                                        Анализ успешных практик и основных ошибок в данной области
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="course__day">
+                            <div class="course__day__header">
+                                День 5: Практическое применение знаний
+                            </div>
+                            <div class="course__day__container">
+                                <ul class="course__day__items">
+                                    <li class="course__day__item">
+                                        Решение кейсов и ситуационных задач
+                                    </li>
+                                    <li class="course__day__item">
+                                        Обсуждение и анализ проблемных вопросов
+                                    </li>
+                                    <li class="course__day__item">
+                                        Подведение итогов и выработка рекомендаций для улучшения процессов закупок
+                                    </li>
+                                    <li class="course__day__item">
+                                        Заключительный экзамен и выдача Свидетельства государственного образца о
+                                        повышении
+                                        квалификации
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="course-registration__container">
+                    <div class="course-registration__background">
+                        <h3 class="course-registration__background__title">
+                            Желаете присоединиться к курсу?
+                        </h3>
+                        <p class="paragraph">Присоединяйтесь к нашему курсу и откройте новые горизонты в области
+                            управления госзакупками! Оставьте вашу заявку, и наш менеджер свяжется с вами в ближайшее
+                            время.</p>
+                        <p class="paragraph big text_center bold">Не ждите, действуйте прямо сейчас!</p>
+                        <p class="paragraph">А если у вас возникнут вопросы, не стесняйтесь позвонить нам по телефону:
+                        <p class="text_center big"><a class="tel" href="tel:+3750172151048">+375 (017) 215-10-48</a></p>
+                        <p class="text_center big"><a class="tel" href="tel:+3750172365966">+375 (017) 236-59-66</a></p>
+                        <p class="text_center big"><a class="tel" href="tel:+3750173236685">+375 (017) 323-66-85</a></p>
+                        </p>
+                    </div>
+                    <div class="course-registration__form">
+                        <h3 class="course-registration__title">Форма записи на КУРС ПОВЫШЕНИЯ КВАЛИФИКАЦИИ «УПРАВЛЕНИЕ
+                            ЗАКУПКАМИ НА КОНКУРСНОЙ ОСНОВЕ»</h3>
+                        <form action="#" method="POST" class="course-registration__form-fields">
+                            <div class="course-registration__input-group">
+                                <label for="full-name" class="course-registration__label">ФИО*:</label>
+                                <input type="text" id="full-name" name="full-name" class="course-registration__input"
+                                       required>
+                            </div>
+                            <div class="course-registration__input-group">
+                                <label for="course-date-city" class="course-registration__label">Дата и город*:</label>
+                                <select class="course-registration__select" name="course-date-city"
+                                        id="course-date-city">
+                                    <option value="" disabled selected>Выберите дату и город</option>
+                                    <optgroup label="Гродно">
+                                        <option value="26-29 марта Гродно">26-29 марта</option>
+                                    </optgroup>
+                                    <optgroup label="Минск">
+                                        <option value="9-12 апреля Минск">9-12 апреля</option>
+                                        <option value="21-24 мая Минск">21-24 мая</option>
+                                        <option value="11-14 июня Минск">11-14 июня</option>
+                                        <option value="9-12 июля Минск">9-12 июля</option>
+                                    </optgroup>
+                                    <optgroup label="Орша">
+                                        <option value="16-19 апреля Орша">16-19 апреля</option>
+                                    </optgroup>
+                                    <optgroup label="Брест">
+                                        <option value="23-26 апреля Брест">23-26 апреля</option>
+                                    </optgroup>
+                                    <optgroup label="Барановичи">
+                                        <option value="15-18 мая Барановичи">15-18 мая</option>
+                                    </optgroup>
+                                    <optgroup label="Витебск">
+                                        <option value="4-7 июня Витебск">4-7 июня</option>
+                                    </optgroup>
+                                    <optgroup label="Могилев">
+                                        <option value="25-28 июня Могилев">25-28 июня</option>
+                                    </optgroup>
+                                </select>
+
+                            </div>
+                            <div class="course-registration__input-group">
+                                <label for="phone" class="course-registration__label">Телефон*:</label>
+                                <input type="tel" id="phone" name="phone" class="course-registration__input" required>
+                            </div>
+                            <div class="course-registration__input-group">
+                                <label for="comment" class="course-registration__label">Комментарий:</label>
+                                <textarea id="comment" name="comment" class="course-registration__textarea" rows="7"
+                                          cols="50"></textarea>
+                            </div>
+                            <button type="submit" class="course-registration__submit-button">Отправить заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="banner__section">
+            <img src="./static/banners/banner_1.jpg" alt="Боковой баннер">
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer__information">
+        <div class="container footer__information__container container__footer">
+            <div class="confident__container">
+                <img src="static/Logo.svg" alt="logo" class="footer__logo">
+                <ul class="confident__menu">
+                    <li class="confident__menu__item"><a>Политика конфиденциальности</a></li>
+                    <li class="confident__menu__item"><a>Условия использования</a></li>
+                    <li class="confident__menu__item"><a>Политика обработки персданных </a></li>
+                    <li class="confident__menu__item"><a>Договор — публичная оферта </a></li>
+                    <li class="confident__menu__item"><a>При использовании материалов сайта <br> ссылка на
+                        tenderbelarus.by обязательна!</a></li>
+                </ul>
+            </div>
+            <div class="footer__menu">
+                <div class="footer__about">
+                    <h3 class="footer__header"><a href="about.html">О нас</a></h3>
+                    <ul class="about__menu">
+                        <li class="menu__item"><a href="information.html">Общая информация</a></li>
+                        <li class="menu__item"><a href="team.html">Наша команда</a></li>
+                        <li class="menu__item"><a href="permits.html">Разрешительные документы</a></li>
+                        <li class="menu__item"><a href="photo_gallery.html">Фотогалерея</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__header"><a href="services.html">Услуги</a></h3>
+                    <ul class="services__menu">
+                        <li class="menu__item"><a href="courses.html">Курсы</a></li>
+                        <li class="menu__item"><a href="seminars.html">Семинары</a></li>
+                        <li class="menu__item"><a href="procurement_support.html">Сопровождение закупок</a></li>
+                        <li class="menu__item"><a href="procurement_monitoring.html">Мониторинг закупок</a></li>
+                        <li class="menu__item"><a href="price.html">Прайс услуг </a></li>
+                    </ul>
+                </div>
+                <div class="footer__cooperation">
+                    <h3 class="footer__header"><a href="cooperation.html">Сотрудничество</a></h3>
+                    <ul class="cooperation__menu">
+                        <li class="menu__item"><a href="partners.html">Партнеры РБ</a></li>
+                        <li class="menu__item"><a href="international_cooperation.html">Международное сотрудничество</a>
+                        </li>
+                        <li class="menu__item"><a href="advertising_magazine.html">Реклама в журнале</a></li>
+                        <li class="menu__item"><a href="advertising.html">Реклама на сайте</a></li>
+                    </ul>
+
+                </div>
+
+                <div>
+                    <h3 class="footer__header"><a href="contacts.html">Контакты</a></h3>
+                    <ul class="contacts__menu">
+                        <li class="menu__item"> 220035, г.Минск,<br> ул. Тимирязева 65, оф.203б п/я 2</li>
+                        <li class="menu__item"><a href="mailto:tenderminsk@yandex.ru">tenderminsk@yandex.ru</a></li>
+                        <li class="menu__item"><a href="tel:+3750172151048">+375 (017) 215-10-48</a></li>
+                        <li class="menu__item"><a href="tel:+3750172365966">+375 (017) 236-59-66</a></li>
+                        <li class="menu__item"><a href="tel:+3750173236685">+375 (017) 323-66-85</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tagline">
+            Тендер - еженедельный специализированный информационно-аналитический журнал
+        </div>
+    </div>
+    <div class="footer__links">
+        <a class="footer__link" href="https://pravo.by/">
+            <img src="./static/footer/link-03.png" alt="link">
+        </a>
+        <a class="footer__link" href="https://forumpravo.by/">
+            <img src="./static/footer/link-04.png" alt="link">
+        </a>
+        <a class="footer__link" href="https://president.gov.by/ru">
+            <img src="./static/footer/link-09.png" alt="link">
+        </a>
+        <a class="footer__link" href="https://economy.gov.by/ru/">
+            <img src="./static/footer/link-05.png" alt="link">
+        </a>
+        <a class="footer__link" href="https://mart.gov.by/">
+            <img src="./static/footer/link-08.png" alt="link">
+        </a>
+        <a class="footer__link" href="https://ncmps.by/">
+            <img src="./static/footer/logo_ru.png" alt="link">
+        </a>
+        <a class="footer__link" href="https://www.butb.by/">
+            <img src="./static/footer/link-10.jpg" alt="link">
+        </a>
+        <a class="footer__link" href="https://icetrade.by/">
+            <img src="./static/footer/link-07.png" alt="link">
+        </a>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.mobile-menu-toggle').click(function () {
+            $('.navigation__list').toggleClass('active');
+            $('.overlay').toggleClass('active');
+            $('body').toggleClass('hide-overflow');
+        });
+        $('.overlay').click(function () {
+            $('.navigation__list').toggleClass('active');
+            $('.overlay').toggleClass('active');
+            $('body').toggleClass('hide-overflow');
+        });
+        $('.menu-close').click(function () {
+            $('.navigation__list').toggleClass('active');
+            $('.overlay').toggleClass('active');
+            $('body').toggleClass('hide-overflow');
+        })
+        $('.seminar-btn').click(function() {
+            const formTop = $('.course-registration__container').offset().top;
+            $('html, body').animate({
+                scrollTop: formTop
+            }, 'slow');
+        });
+    });
+</script>
+</body>
+</html>

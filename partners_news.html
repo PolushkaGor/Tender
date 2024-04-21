@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости партнеров</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
+
+    <meta property="og:title" content="Tender">
+    <meta property="og:description" content="Новости партнеров">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:url" content="https://example.com/">
+</head>
+<body>
+<header>
+    <div class="container header__section">
+        <div class="logo__section">
+            <a href="index.html">
+                <img alt="logo" src="static/Logo.svg" class="logo">
+            </a>
+            <p class="logo__text">Еженедельный специализированный журнал</p>
+        </div>
+        <div class="contact__section">
+            <a>Обратная связь</a>
+            <a>Контакты</a>
+        </div>
+    </div>
+    <nav class="navigation__section">
+        <div class="container">
+            <div class="mobile-menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul class="navigation__list">
+                <li class="navigation__item__menu">
+                    <img alt="logo" src="static/Logo.svg" class="menu__logo">
+                    <button class="menu-close"></button>
+                </li>
+                <li class="navigation__item">
+                    <p class="navigation__item__text">
+                        <a href="about.html" class="navigation__item__text">О нас</a>
+                    </p>
+                    <span class="submenu-indicator"></span>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="information.html">Общая информация</a></li>
+                        <li class="submenu__item"><a href="team.html">Наша команда</a></li>
+                        <li class="submenu__item"><a href="permits.html">Разрешительные документы</a></li>
+                        <li class="submenu__item"><a href="photo_gallery.html">Фотогалерея</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <p class="navigation__item__text">
+                        <a href="magazine.html" class="navigation__item__text">Журнал</a>
+                    </p>
+                    <span class="submenu-indicator"></span>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="subscription.html">Подписка</a></li>
+                        <li class="submenu__item"><a href="vdnh_gossnab.html">ВДНХ / ГОССНАБ</a></li>
+                        <li class="submenu__item"><a href="anons.html">Анонс номера</a></li>
+                        <li class="submenu__item"><a href="archive_2021.html">Архив 2022</a></li>
+                        <li class="submenu__item"><a href="archive_2021.html">Архив 2021</a></li>
+                        <li class="submenu__item"><a href="question_answer.html">Вопрос ответ</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <p class="navigation__item__text">
+                        <a href="services.html" class="navigation__item__text">Услуги</a>
+                    </p>
+                    <span class="submenu-indicator"></span>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="courses.html">Курсы</a></li>
+                        <li class="submenu__item"><a href="seminars.html">Семинары</a></li>
+                        <li class="submenu__item"><a href="procurement_support.html">Сопровождение закупок</a>
+                        <li class="submenu__item"><a href="procurement_monitoring.html">Монниторинг закупок</a></li>
+                        <li class="submenu__item"><a href="price.html">Прайс услуг</a></li>
+                        <li class="submenu__item"><a href="contracts.html">Формы договоров</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <p class="navigation__item__text">
+                        <a href="news.html" class="navigation__item__text">Новости</a>
+                    </p>
+                    <span class="submenu-indicator"></span>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="actual_news.html">Актуальное</a></li>
+                        <li class="submenu__item"><a href="partners_news.html">Новости партнеров</a></li>
+                        <li class="submenu__item"><a href="expert_opinions.html">Мнения экспертов</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <p class="navigation__item__text">
+                        <a href='npa.html' class="navigation__item__text">НПА</a>
+                    </p>
+                    <span class="submenu-indicator"></span>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="acts.html">Нормотивно-правовые акты ВЭД</a></li>
+                        <li class="submenu__item"><a href="guidelines.html">Методические рекомендации</a></li>
+                        <li class="submenu__item"><a href="calendar.html">Календарь снабженца</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <p class="navigation__item__text">
+                        <a href='cooperation.html' class="navigation__item__text">Сотрудничество</a>
+                    </p>
+                    <span class="submenu-indicator"></span>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="partners.html">Партнеры РБ</a></li>
+                        <li class="submenu__item"><a href="international_cooperation.html">Международное
+                            сотрудничество</a></li>
+                        <li class="submenu__item"><a href="advertising_magazine.html">Реклама в журнале</a></li>
+                        <li class="submenu__item"><a href="advertising.html">Реклама на сайте</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="overlay"></div>
+            <form class="navigation__search">
+                <input class="search__input" type="text">
+                <button class="search__submit" type="submit"></button>
+            </form>
+        </div>
+
+    </nav>
+</header>
+<main>
+    <div class="main__container">
+        <div class="container container__main container__inform">
+            <section class="hot-links__section">
+                <div class="hot-links__link hot-links__link_subscription">
+                    <span class="hot-links__link__text">Подписка</span></div>
+                <div class="hot-links__link hot-links__link_gos">
+                    <span class="hot-links__link__text">Госснаб</span>
+                </div>
+                <div class="hot-links__link hot-links__link_vdnh">
+                    <span class="hot-links__link__text">ВДНХ</span>
+                </div>
+            </section>
+            <section class="news__container news__page">
+                <h2 class="section__header news__header">Новости партнеров</h2>
+                <div class="news__item">
+                    <a class="news__item__ref" href="news__item.html">
+                        <div class="news__date">
+                            15 фев. 2024
+                        </div>
+                        <div class="news__information">
+                            <h3 class="information__title">
+                                Автоваз не исключает снижения производственного плана на фоне стагнации авторынка
+                            </h3>
+                            <p class="information__text">
+                                Производственный план «АвтоВАЗа» сверстанный в объеме 500
+                                тыс. автомобилей план «АвтоВАЗа» сверстанный в объеме 500
+                            </p>
+                        </div>
+                        <div class="news__picture">
+                            <img src="./static/news/through-the-blinds-a-group-of-employees-applauding-at-a-business-meeting_160672-41851-transformed.jpeg"
+                                 alt="news_image">
+                        </div>
+                    </a>
+                </div>
+                <div class="news__item">
+                    <a class="news__item__ref" href="news__item.html">
+                        <div class="news__date">
+                            15 фев. 2024
+                        </div>
+                        <div class="news__information">
+                            <h3 class="information__title">
+                                Правительство освободило росрезерв от проведения малых закупок на ЕАТ «Березка»
+                            </h3>
+                            <p class="information__text">
+                                Федеральное агентство по государственным резервам агентство по государственным резервам
+                                агентство по государственным резервам.
+                            </p>
+                        </div>
+                        <div class="news__picture">
+                            <img src="./static/news/business-people-group-with-young-adults-and-senior-on-meeting-at-modern-bright-office-interior_530697-13151-transformed.jpeg"
+                                 alt="news_image">
+                        </div>
+                    </a>
+                </div>
+                <div class="news__item">
+                    <a class="news__item__ref" href="news__item.html">
+                        <div class="news__date">
+                            14 фев. 2024
+                        </div>
+                        <div class="news__information">
+                            <h3 class="information__title">
+                                Х5 планируетв 2024 году вернуться к практике выращивания поставщиков </h3>
+                            <p class="information__text">
+                                В 2024 году планируется вернуться планируется вернуться планируется вернуться
+                                планируется
+                                вернуться планируется вернуться планируется.
+                            </p>
+                        </div>
+                        <div class="news__picture">
+                            <img src="./static/news/man-looking-stock-market-news-on-computer_53876-122481.jpg"
+                                 alt="news_image">
+                        </div>
+                    </a>
+                </div>
+                <div class="news__item">
+                    <a class="news__item__ref" href="news__item.html">
+                        <div class="news__date">
+                            13 фев. 2024
+                        </div>
+                        <div class="news__information">
+                            <h3 class="information__title">
+                                Правительство РФ предлагает перевести закупки «Роскосмос» в закрытый режим
+                            </h3>
+                            <p class="information__text">
+                                Правительство РФ внесло на рассмотрение Госдумы проект поправок внесло на рассмотрение
+                                Госдумы проект поправок внесло на рассмотрение
+                            </p>
+                        </div>
+                        <div class="news__picture">
+                            <img src="./static/news/successful-business-team-discussing-strategy-while-filming-staff-meeting-in-the-board-room_425904-1849-transformed.jpeg"
+                                 alt="news_image">
+                        </div>
+                    </a>
+                </div>
+                <div class="news__item">
+                    <a class="news__item__ref" href="news__item.html">
+                        <div class="news__date">
+                            12 фев. 2024
+                        </div>
+                        <div class="news__information">
+                            <h3 class="information__title">
+                                ЦБ сохранил ключевую ставку на уровне 16%
+                            </h3>
+                            <p class="information__text">
+                                Кредиты и ипотека останутся дорогими еще на месяц. Банк России сохранил ставку на уровне
+                                16%. Почему регулятор принял такое решение? И как оно отразится на курсе рубля?
+                                Предлагаю
+                                поучаствовать в квесте "Шериф-дебаты"
+                            </p>
+                        </div>
+                        <div class="news__picture">
+                            <img src="./static/news/successful-business-team-discussing-strategy-while-filming-staff-meeting-in-the-board-room_425904-1849-transformed.jpeg"
+                                 alt="news_image">
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <button class="main__button">
+                        Загрузить еще
+                    </button>
+                </div>
+
+            </section>
+        </div>
+        <div class="banner__section">
+            <img src="./static/banners/banner_2.jpg" alt="Боковой баннер">
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer__information">
+        <div class="container footer__information__container container__footer">
+            <div class="confident__container">
+                <img src="static/Logo.svg" alt="logo" class="footer__logo">
+                <ul class="confident__menu">
+                    <li class="confident__menu__item"><a>Политика конфиденциальности</a></li>
+                    <li class="confident__menu__item"><a>Условия использования</a></li>
+                    <li class="confident__menu__item"><a>Политика обработки персданных </a></li>
+                    <li class="confident__menu__item"><a>Договор — публичная оферта </a></li>
+                    <li class="confident__menu__item"><a>При использовании материалов сайта <br> ссылка на
+                        tenderbelarus.by обязательна!</a></li>
+                </ul>
+            </div>
+            <div class="footer__menu">
+                <div class="footer__about">
+                    <h3 class="footer__header"><a href="about.html">О нас</a></h3>
+                    <ul class="about__menu">
+                        <li class="menu__item"><a href="information.html">Общая информация</a></li>
+                        <li class="menu__item"><a href="team.html">Наша команда</a></li>
+                        <li class="menu__item"><a href="permits.html">Разрешительные документы</a></li>
+                        <li class="menu__item"><a href="photo_gallery.html">Фотогалерея</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__header"><a href="services.html">Услуги</a></h3>
+                    <ul class="services__menu">
+                        <li class="menu__item"><a href="courses.html">Курсы</a></li>
+                        <li class="menu__item"><a href="seminars.html">Семинары</a></li>
+                        <li class="menu__item"><a href="procurement_support.html">Сопровождение закупок</a></li>
+                        <li class="menu__item"><a href="procurement_monitoring.html">Мониторинг закупок</a></li>
+                        <li class="menu__item"><a href="price.html">Прайс услуг </a></li>
+                    </ul>
+                </div>
+                <div class="footer__cooperation">
+                    <h3 class="footer__header"><a href="cooperation.html">Сотрудничество</a></h3>
+                    <ul class="cooperation__menu">
+                        <li class="menu__item"><a href="partners.html">Партнеры РБ</a></li>
+                        <li class="menu__item"><a href="international_cooperation.html">Международное сотрудничество</a>
+                        </li>
+                        <li class="menu__item"><a href="advertising_magazine.html">Реклама в журнале</a></li>
+                        <li class="menu__item"><a href="advertising.html">Реклама на сайте</a></li>
+                    </ul>
+
+                </div>
+
+                <div>
+                    <h3 class="footer__header"><a href="contacts.html">Контакты</a></h3>
+                    <ul class="contacts__menu">
+                        <li class="menu__item"> 220035, г.Минск,<br> ул. Тимирязева 65, оф.203б п/я 2</li>
+                        <li class="menu__item"><a href="mailto:tenderminsk@yandex.ru">tenderminsk@yandex.ru</a></li>
+                        <li class="menu__item"><a href="tel:+3750172151048">+375 (017) 215-10-48</a></li>
+                        <li class="menu__item"><a href="tel:+3750172365966">+375 (017) 236-59-66</a></li>
+                        <li class="menu__item"><a href="tel:+3750173236685">+375 (017) 323-66-85</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tagline">
+            Тендер - еженедельный специализированный информационно-аналитический журнал
+        </div>
+    </div>
+    <div class="footer__links">
+        <a class="footer__link" href="https://pravo.by/">
+            <img src="./static/footer/link-03.png" alt="link">
+        </a>
+        <a class="footer__link" href="https://forumpravo.by/">
+            <img src="./static/footer/link-04.png" alt="link">
+        </a>
+        <a class="footer__link" href="https://president.gov.by/ru">
+            <img src="./static/footer/link-09.png" alt="link">
+        </a>
+        <a class="footer__link" href="https://economy.gov.by/ru/">
+            <img src="./static/footer/link-05.png" alt="link">
+        </a>
+        <a class="footer__link" href="https://mart.gov.by/">
+            <img src="./static/footer/link-08.png" alt="link">
+        </a>
+        <a class="footer__link" href="https://ncmps.by/">
+            <img src="./static/footer/logo_ru.png" alt="link">
+        </a>
+        <a class="footer__link" href="https://www.butb.by/">
+            <img src="./static/footer/link-10.jpg" alt="link">
+        </a>
+        <a class="footer__link" href="https://icetrade.by/">
+            <img src="./static/footer/link-07.png" alt="link">
+        </a>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.mobile-menu-toggle').click(function () {
+            $('.navigation__list').toggleClass('active');
+            $('.overlay').toggleClass('active');
+            $('body').toggleClass('hide-overflow');
+        });
+        $('.overlay').click(function () {
+            $('.navigation__list').toggleClass('active');
+            $('.overlay').toggleClass('active');
+            $('body').toggleClass('hide-overflow');
+        });
+        $('.menu-close').click(function () {
+            $('.navigation__list').toggleClass('active');
+            $('.overlay').toggleClass('active');
+            $('body').toggleClass('hide-overflow');
+        })
+    });
+</script>
+</body>
+</html>

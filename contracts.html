@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы договоров</title>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
+
+    <meta property="og:title" content="Tender">
+    <meta property="og:description" content="Формы договоров">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:url" content="https://example.com/">
+</head>
+<body>
+<header>
+    <div class="container header__section">
+        <div class="logo__section">
+            <a href="index.html">
+                <img alt="logo" src="static/Logo.svg" class="logo">
+            </a>
+            <p class="logo__text">Еженедельный специализированный журнал</p>
+        </div>
+        <div class="contact__section">
+            <a>Обратная связь</a>
+            <a>Контакты</a>
+        </div>
+    </div>
+    <nav class="navigation__section">
+        <div class="container">
+            <div class="mobile-menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <ul class="navigation__list">
+                <li class="navigation__item__menu">
+                    <img alt="logo" src="static/Logo.svg" class="menu__logo">
+                    <button class="menu-close"></button>
+                </li>
+                <li class="navigation__item">
+                    <p class="navigation__item__text">
+                        <a href="about.html" class="navigation__item__text">О нас</a>
+                    </p>
+                    <span class="submenu-indicator"></span>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="information.html">Общая информация</a></li>
+                        <li class="submenu__item"><a href="team.html">Наша команда</a></li>
+                        <li class="submenu__item"><a href="permits.html">Разрешительные документы</a></li>
+                        <li class="submenu__item"><a href="photo_gallery.html">Фотогалерея</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <p class="navigation__item__text">
+                        <a href="magazine.html" class="navigation__item__text">Журнал</a>
+                    </p>
+                    <span class="submenu-indicator"></span>
+                    <ul class="submenu">
+                        <a href="subscription.html">
+                            <li class="submenu__item">Подписка</li>
+                        </a>
+                        <li class="submenu__item"><a href="vdnh_gossnab.html">ВДНХ / ГОССНАБ</a></li>
+                        <li class="submenu__item"><a href="anons.html">Анонс номера</a></li>
+                        <li class="submenu__item"><a href="archive_2021.html">Архив 2022</a></li>
+                        <li class="submenu__item"><a href="archive_2021.html">Архив 2021</a></li>
+                        <li class="submenu__item"><a href="question_answer.html">Вопрос ответ</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <p class="navigation__item__text">
+                        <a href="services.html" class="navigation__item__text">Услуги</a>
+                    </p>
+                    <span class="submenu-indicator"></span>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="courses.html">Курсы</a></li>
+                        <li class="submenu__item"><a href="seminars.html">Семинары</a></li>
+                        <li class="submenu__item"><a href="procurement_support.html">Сопровождение закупок</a>
+                        <li class="submenu__item"><a href="procurement_monitoring.html">Монниторинг закупок</a></li>
+                        <li class="submenu__item"><a href="price.html">Прайс услуг</a></li>
+                        <li class="submenu__item"><a href="contracts.html">Формы договоров</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <p class="navigation__item__text">
+                        <a href="news.html" class="navigation__item__text">Новости</a>
+                    </p>
+                    <span class="submenu-indicator"></span>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="actual_news.html">Актуальное</a></li>
+                        <li class="submenu__item"><a href="partners_news.html">Новости партнеров</a></li>
+                        <li class="submenu__item"><a href="expert_opinions.html">Мнения экспертов</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <p class="navigation__item__text">
+                        <a href='npa.html' class="navigation__item__text">НПА</a>
+                    </p>
+                    <span class="submenu-indicator"></span>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="acts.html">Нормотивно-правовые акты ВЭД</a></li>
+                        <li class="submenu__item"><a href="guidelines.html">Методические рекомендации</a></li>
+                        <li class="submenu__item"><a href="calendar.html">Календарь снабженца</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <p class="navigation__item__text">
+                        <a href='cooperation.html' class="navigation__item__text">Сотрудничество</a>
+                    </p>
+                    <span class="submenu-indicator"></span>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="partners.html">Партнеры РБ</a></li>
+                        <li class="submenu__item"><a href="international_cooperation.html">Международное
+                            сотрудничество</a></li>
+                        <li class="submenu__item"><a href="advertising_magazine.html">Реклама в журнале</a></li>
+                        <li class="submenu__item"><a href="advertising.html">Реклама на сайте</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="overlay"></div>
+            <form class="navigation__search">
+                <input class="search__input" type="text">
+                <button class="search__submit" type="submit"></button>
+            </form>
+        </div>
+
+    </nav>
+</header>
+<main>
+    <div class="main__container">
+        <div class="container container__main container__inform">
+            <section class="hot-links__section">
+                <div class="hot-links__link hot-links__link_subscription">
+                    <span class="hot-links__link__text">Подписка</span></div>
+                <div class="hot-links__link hot-links__link_gos">
+                    <span class="hot-links__link__text">Госснаб</span>
+                </div>
+                <div class="hot-links__link hot-links__link_vdnh">
+                    <span class="hot-links__link__text">ВДНХ</span>
+                </div>
+            </section>
+            <section>
+                <h2 class="section__header section__header_border">Формы договоров</h2>
+                <p class="paragraph">На этой странице представлены образцы договоров, которые могут быть использованы
+                    при различных типах
+                    сделок. Образцы разработаны с учетом законодательных требований и представляют собой шаблоны для
+                    составления конкретных договоров.</p>
+                <div class="contracts">
+                    <div class="contract contract_multiple">
+                        <h3 class="contract__title">Договор на участие в семинаре:</h3>
+                        <p class="contract__description">
+                            Этот образец договора предназначен для участия одного лица в семинаре, который проводится в
+                            течение одного или двух дней. В нем содержатся основные условия участия, права и обязанности
+                            сторон.
+                        </p>
+                        <div class="contract_multiple__area">
+                            <div class="contract_multiple__area__block">
+                                <h4 class="multiple__subtitle">
+                                    1 человек на 1 день
+                                </h4>
+                                <div class="contract__download">
+                                    <p>
+                                        Договор
+                                    </p>
+                                    <button class="contract__download-button">Скачать договор</button>
+                                </div>
+                                <div class="contract__download">
+                                    <p>
+                                        Счет-фактура
+                                    </p>
+                                    <button class="contract__download-button">Скачать счет-фактуру</button>
+                                </div>
+                            </div>
+                            <div class="contract_multiple__area__block">
+                                <h4 class="multiple__subtitle">
+                                    1 человек на 2 дня
+                                </h4>
+                                <div class="contract__download">
+                                    <p>
+                                        Договор
+                                    </p>
+                                    <button class="contract__download-button">Скачать договор</button>
+                                </div>
+                                <div class="contract__download">
+                                    <p>
+                                        Счет-фактура
+                                    </p>
+                                    <button class="contract__download-button">Скачать счет-фактуру</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contract">
+                        <h3 class="contract__title">Договор на сопровождение и (или) мониторинг закупки:</h3>
+                        <p class="contract__description">
+                            Этот образец договора предназначен для оформления сделок по сопровождению и мониторингу
+                            закупок.
+                            В нем должны быть прописаны условия оказания услуг, сроки и стоимость сопровождения, а также
+                            права и обязанности сторон.
+                        </p>
+                        <div class="contract__download">
+                            <button class="contract__download-button">Скачать договор</button>
+                        </div>
+                    </div>
+                    <div class="contract">
+                        <h3 class="contract__title">Договор на размещение рекламы на сайте "Tenderbelarus.by":</h3>
+                        <p class="contract__description">
+                            Этот образец договора используется для оформления сделок по размещению рекламных материалов
+                            на
+                            сайте "Tenderbelarus.by". В нем указываются условия размещения, сроки, стоимость и другие
+                            детали
+                            сотрудничества.
+                        </p>
+                        <div class="contract__download">
+                            <button class="contract__download-button">Скачать договор</button>
+                        </div>
+                    </div>
+                    <div class="contract">
+                        <h3 class="contract__title"> Договор на размещение рекламы в журнале "Тендер":</h3>
+                        <p class="contract__description">
+                            Этот образец договора применяется для заключения сделок по размещению рекламы в печатном
+                            журнале "Тендер". В нем содержатся условия размещения рекламы, размеры и форматы объявлений,
+                            стоимость размещения и прочие детали сотрудничества.
+                        </p>
+                        <div class="contract__download">
+                            <button class="contract__download-button">Скачать договор</button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <div class="banner__section">
+            <img src="./static/banners/banner_1.jpg" alt="Боковой баннер">
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer__information">
+        <div class="container footer__information__container container__footer">
+            <div class="confident__container">
+                <img src="static/Logo.svg" alt="logo" class="footer__logo">
+                <ul class="confident__menu">
+                    <li class="confident__menu__item"><a>Политика конфиденциальности</a></li>
+                    <li class="confident__menu__item"><a>Условия использования</a></li>
+                    <li class="confident__menu__item"><a>Политика обработки персданных </a></li>
+                    <li class="confident__menu__item"><a>Договор — публичная оферта </a></li>
+                    <li class="confident__menu__item"><a>При использовании материалов сайта <br> ссылка на
+                        tenderbelarus.by обязательна!</a></li>
+                </ul>
+            </div>
+            <div class="footer__menu">
+                <div class="footer__about">
+                    <h3 class="footer__header"><a href="about.html">О нас</a></h3>
+                    <ul class="about__menu">
+                        <li class="menu__item"><a href="information.html">Общая информация</a></li>
+                        <li class="menu__item"><a href="team.html">Наша команда</a></li>
+                        <li class="menu__item"><a href="permits.html">Разрешительные документы</a></li>
+                        <li class="menu__item"><a href="photo_gallery.html">Фотогалерея</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__header"><a href="services.html">Услуги</a></h3>
+                    <ul class="services__menu">
+                        <li class="menu__item"><a href="courses.html">Курсы</a></li>
+                        <li class="menu__item"><a href="seminars.html">Семинары</a></li>
+                        <li class="menu__item"><a href="procurement_support.html">Сопровождение закупок</a></li>
+                        <li class="menu__item"><a href="procurement_monitoring.html">Мониторинг закупок</a></li>
+                        <li class="menu__item"><a href="price.html">Прайс услуг </a></li>
+                    </ul>
+                </div>
+                <div class="footer__cooperation">
+                    <h3 class="footer__header"><a href="cooperation.html">Сотрудничество</a></h3>
+                    <ul class="cooperation__menu">
+                        <li class="menu__item"><a href="partners.html">Партнеры РБ</a></li>
+                        <li class="menu__item"><a href="international_cooperation.html">Международное сотрудничество</a>
+                        </li>
+                        <li class="menu__item"><a href="advertising_magazine.html">Реклама в журнале</a></li>
+                        <li class="menu__item"><a href="advertising.html">Реклама на сайте</a></li>
+                    </ul>
+
+                </div>
+
+                <div>
+                    <h3 class="footer__header"><a href="contacts.html">Контакты</a></h3>
+                    <ul class="contacts__menu">
+                        <li class="menu__item"> 220035, г.Минск,<br> ул. Тимирязева 65, оф.203б п/я 2</li>
+                        <li class="menu__item"><a href="mailto:tenderminsk@yandex.ru">tenderminsk@yandex.ru</a></li>
+                        <li class="menu__item"><a href="tel:+3750172151048">+375 (017) 215-10-48</a></li>
+                        <li class="menu__item"><a href="tel:+3750172365966">+375 (017) 236-59-66</a></li>
+                        <li class="menu__item"><a href="tel:+3750173236685">+375 (017) 323-66-85</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="tagline">
+            Тендер - еженедельный специализированный информационно-аналитический журнал
+        </div>
+    </div>
+    <div class="footer__links">
+        <a class="footer__link" href="https://pravo.by/">
+            <img src="./static/footer/link-03.png" alt="link">
+        </a>
+        <a class="footer__link" href="https://forumpravo.by/">
+            <img src="./static/footer/link-04.png" alt="link">
+        </a>
+        <a class="footer__link" href="https://president.gov.by/ru">
+            <img src="./static/footer/link-09.png" alt="link">
+        </a>
+        <a class="footer__link" href="https://economy.gov.by/ru/">
+            <img src="./static/footer/link-05.png" alt="link">
+        </a>
+        <a class="footer__link" href="https://mart.gov.by/">
+            <img src="./static/footer/link-08.png" alt="link">
+        </a>
+        <a class="footer__link" href="https://ncmps.by/">
+            <img src="./static/footer/logo_ru.png" alt="link">
+        </a>
+        <a class="footer__link" href="https://www.butb.by/">
+            <img src="./static/footer/link-10.jpg" alt="link">
+        </a>
+        <a class="footer__link" href="https://icetrade.by/">
+            <img src="./static/footer/link-07.png" alt="link">
+        </a>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.mobile-menu-toggle').click(function () {
+            $('.navigation__list').toggleClass('active');
+            $('.overlay').toggleClass('active');
+            $('body').toggleClass('hide-overflow');
+        });
+        $('.overlay').click(function () {
+            $('.navigation__list').toggleClass('active');
+            $('.overlay').toggleClass('active');
+            $('body').toggleClass('hide-overflow');
+        });
+        $('.menu-close').click(function () {
+            $('.navigation__list').toggleClass('active');
+            $('.overlay').toggleClass('active');
+            $('body').toggleClass('hide-overflow');
+        })
+    });
+</script>
+</body>
+</html>
