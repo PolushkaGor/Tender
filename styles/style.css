@@ -2578,6 +2578,16 @@ select {
         object-fit: cover;
     }
 
+    .magazine__area {
+        flex-direction: column;
+    }
+
+    .magazine__area img {
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
 }
 
 /* Стили для небольших ноутбуков и планшетов в альбомной ориентации (MD) */
