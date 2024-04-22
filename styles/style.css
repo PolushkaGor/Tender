@@ -2442,11 +2442,13 @@ select {
 
 
 .filter__btn {
-    text-transform: uppercase;
     font-size: 16px;
     margin: 5px;
     cursor: pointer;
     background: var(--main-light);
+    border: none;
+    padding: 0 5px;
+    text-transform: lowercase;
 }
 
 .filter__btn_active {
@@ -2468,7 +2470,7 @@ select {
 
 .btn__area {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     gap: 10px;
 }
@@ -2478,7 +2480,7 @@ select {
 }
 
 .bin__btn {
-    padding: 5px;
+    padding: 2px 5px;
     border: 2px solid var(--main-blue);
     background: transparent;
     cursor: pointer;
@@ -2491,15 +2493,127 @@ select {
 
 
 .filter__settings {
-    display: flex;
-    justify-content: right;
-}
-
-.tag__area {
-    flex: 1;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
 }
+
+.filter__settings__btn {
+    display: flex;
+    background: var(--main-light);
+    color: var(--black);
+    align-items: center;
+    text-transform: uppercase;
+    gap: 10px;
+    padding: 5px 10px;
+}
+
+
+.filter__settings__item:hover .filter__settings__btn {
+    background: var(--gray-30);
+}
+
+
+.filter__settings__dropdown__field {
+    margin-bottom: 5px;
+}
+
+/* Стили для выпадающего списка */
+.filter__settings__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    padding: 0 20px;
+    display: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: max-content;
+    max-height: 350px;
+    max-width: 635px;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.show-all-area {
+    padding: 5px 0 10px 0;
+    background: linear-gradient(to bottom, transparent, white 15%);
+    position: sticky;
+    bottom: 0;
+}
+
+.filter__settings__dropdown_small{
+    padding-bottom: 15px;
+}
+.show-all-btn {
+    background: none;
+    border: none;
+    padding-top:5px;
+    color: var(--gray-50);
+    font-weight: bold;
+}
+
+.show-all-btn:hover {
+    color: var(--main-blue);
+}
+
+.filter__settings__item {
+    position: relative;
+}
+
+.filter__settings__dropdown__field label {
+    line-height: 1rem;
+}
+
+/* Стили для кастомного чекбокса */
+.filter__settings__dropdown input[type="checkbox"] {
+    display: none; /* Скрываем стандартный чекбокс */
+}
+
+/* Стили для кастомного визуального чекбокса */
+.filter__settings__dropdown input[type="checkbox"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Стили для подсветки кастомного чекбокса при наведении */
+.filter__settings__dropdown input[type="checkbox"] + label:hover:before {
+    border-color: var(--main-blue);
+}
+
+/* Стили для отображения выбранного чекбокса */
+.filter__settings__dropdown input[type="checkbox"]:checked + label:before {
+    content: "\2714"; /* Юникодный символ для галочки */
+    font-size: 14px;
+    color: var(--wight); /* Цвет галочки */
+    text-align: center;
+    line-height: 16px;
+    background-color: var(--main-blue);
+    border-color: var(--main-blue);
+}
+
+
+.filter__settings__dropdown__title {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 0 5px 0;
+    color: var(--gray-50);
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
 
 @media (max-width: 1500px) {
     .question__information {
