@@ -140,18 +140,68 @@
             <section>
                 <h2 class="section__header section__header_border">Нормотивно-правовые акты ВЭД</h2>
                 <div>
-                    <div class="filter__settings">
-                        <div class="filter__settings__item filter__settings__item_big">
-                            <button class="main__button filter__settings__btn">
-                                <p>Тип</p>
-                                <img src="./static/icons/arrow-down.svg" alt="expand-button" height="12" width="12"/>
+                    <h3 class="section__header">Полный перечень нормативных документов, регулирующих закупки товаров
+                        (работ, услуг)</h3>
+                    <div class="npa__info-area">
+                        <p class="paragraph">
+                            Подборка документов подготовлена <span class="italic">Александром Ерофеевым, аналитиком журнала «Тендер».</span>
+                            Документы приведены по состоянию на <span class="bold underline">
+                        14 января 2024 года.</span>
+                        </p>
+                        <p class="paragraph">
+                            Здесь не приводятся документы, которыми просто вносились изменения и (или) дополнения.
+                            При подготовке Перечня использованы документы <a class="link"
+                                                                             href="https://www.business-info.by/">ИПС
+                            Бизнес-Инфо</a>.
+                            Технические нормативные правовые акты (ТНПА) можно найти на сайте <a class="link"
+                                                                                                 href="http://www.tnpa.by/">Национального
+                            фонда ТНПА Республики Беларусь</a>
+                            Головной организацией Минстройархитектуры Республики Беларусь по техническому нормированию и
+                            стандартизации в области строительства является <a class="link" href="http://www.stn.by">РУП
+                            «Стройтехнорм»</a>.
+                            Документы Евразийского экономического союза размещены на <a href="https://docs.eaeunion.org"
+                                                                                        class="link">Правовом портале
+                            ЕАЭС</a>.
+                        </p>
+                        <p class="paragraph">
+                            В разделе «Решения местных органов власти» приведены только решения областных (Минского
+                            городского) Советов депутатов. Решения районных Советов депутатов, определяющие порядок
+                            осуществления закупок товаров (работ, услуг) за счет собственных средств коммунальными
+                            унитарными предприятиями, государственными объединениями, иными юридическими лицами,
+                            имущество которых находится в коммунальной собственности, либо хозяйственными обществами, в
+                            уставных фондах которых более 25 процентов акций (долей) принадлежит
+                            административно-территориальной единице и (или) организациям, имущество которых находится в
+                            коммунальной собственности, можно найти в информационно-правовых системах.
+                        </p>
+                        <div class="npa__download-area"><p>
+                            (Ознакомить в формате dox.)
+                        </p>
+                            <button class="main__button">
+                                Скачать НПА
                             </button>
-                            <div class="filter__settings__dropdown">
-                                <p class="filter__settings__dropdown__title">Тип</p>
+                        </div>
+                    </div>
+                    <div class="filter__settings">
+                        <div class="filter__settings__item">
+                            <div class="main__button filter__settings__btn">
+                                <p>Тип</p>
+                                <p class="count"></p>
+                                <img src="./static/icons/arrow-down.svg" alt="expand-button" height="12" width="12"/>
+                            </div>
+                            <div id="filter_big" class="filter__settings__dropdown">
+                                <div class="filter__header">
+                                    <p class="filter__settings__dropdown__title">Тип</p>
+                                    <div class="clear-filter-btn">Очистить
+                                        <img src="./static/icons/cancel.png" alt="expand-button" height="12"
+                                             width="12"/>
+                                    </div>
+                                </div>
+
                                 <div class="filter__settings__dropdown__field">
                                     <input type="checkbox" id="option1" name="option1"
                                            value="международные конвенции, соглашения, решения, договоры и стандарты">
-                                    <label for="option1">международные конвенции, соглашения, решения, договоры и
+                                    <label for="option1">
+                                        международные конвенции, соглашения, решения, договоры и
                                         стандарты</label><br>
                                 </div>
                                 <div class="filter__settings__dropdown__field">
@@ -268,18 +318,21 @@
                                     <input type="checkbox" id="option23" name="option23" value="регламенты">
                                     <label for="option23">регламенты</label><br>
                                 </div>
-                                <div class="show-all-area">
-                                    <button class="show-all-btn">Все</button>
-                                </div>
                             </div>
                         </div>
                         <div class="filter__settings__item">
-                            <button class="main__button filter__settings__btn">
+                            <div class="main__button filter__settings__btn">
                                 <p>Для кого полезно</p>
+                                <p class="count"></p>
                                 <img src="./static/icons/arrow-down.svg" alt="expand-button" height="12" width="12"/>
-                            </button>
-                            <div class="filter__settings__dropdown filter__settings__dropdown_small">
-                                <p class="filter__settings__dropdown__title">Для кого полезно</p>
+                            </div>
+                            <div id="filter_small" class="filter__settings__dropdown filter__settings__dropdown_small">
+                                <div class="filter__header">
+                                    <p class="filter__settings__dropdown__title">Для кого полезно</p>
+                                    <div class="clear-filter-btn"> Очистить
+                                        <img src="./static/icons/cancel.png" alt="expand-button" height="12"
+                                             width="12"/></div>
+                                </div>
                                 <div class="filter__settings__dropdown__field">
                                     <input type="checkbox" id="option221" name="option221" value="Основные">
                                     <label for="option221">Основные</label><br>
@@ -296,11 +349,92 @@
                                 </div>
                             </div>
                         </div>
-
+                        <div class="clear-btn">
+                            Сбросить все фильтры
+                            <img src="./static/icons/cancel.png" alt="clear" width="11" height="11">
+                        </div>
                     </div>
-                    <div>
-
+                    <div class="acts">
+                        <div class="acts__item">
+                            <div class="acts__item_title">Конвенция Организации Объединенных Наций против коррупции
+                            </div>
+                            <div class="acts__item_type">МЕЖДУНАРОДНЫЕ КОНВЕНЦИИ, СОГЛАШЕНИЯ, РЕШЕНИЯ, ДОГОВОРЫ И
+                                СТАНДАРТЫ
+                            </div>
+                            <div class="acts__item_details">
+                                <div class="acts__item_details_doc"><span>Вид документа:</span> Конвенция Организации
+                                    Объединенных Наций
+                                </div>
+                                <div class="acts__item_details_org"><span>Принявший орган:</span> Конвенция Организации
+                                    Объединенных Наций
+                                </div>
+                                <div class="acts__item_details_date"><span>Дата принятия, номер:</span> от 31.10.2003
+                                </div>
+                            </div>
+                            <div class="acts__item_note">
+                                <span>Примечание:</span> Особо – Статья 9 «Публичные закупки и управление
+                                публичными финансами». Определено, что каждое государство-участник принимает
+                                необходимые меры для создания надлежащих систем закупок, которые основываются на
+                                прозрачности, конкуренции и объективных критериях принятия решений и являются
+                                эффективными, среди прочего, с точки зрения предупреждения коррупции
+                            </div>
+                            <div class="acts__item_for-who">
+                                Всем
+                            </div>
+                        </div>
+                        <div class="acts__item">
+                            <div class="acts__item_title">Соглашение Содружества Независимых Государств</div>
+                            <div class="acts__item_type">МЕЖДУНАРОДНЫЕ КОНВЕНЦИИ, СОГЛАШЕНИЯ, РЕШЕНИЯ, ДОГОВОРЫ И
+                                СТАНДАРТЫ
+                            </div>
+                            <div class="acts__item_details">
+                                <div class="acts__item_details_doc"><span>Вид документа:</span> Соглашение Содружества
+                                    Независимых Государств
+                                </div>
+                                <div class="acts__item_details_org"><span>Принявший орган:</span> Заключено в г. Ялте
+                                </div>
+                                <div class="acts__item_details_date"><span>Дата принятия, номер:</span> 20.11.2009</div>
+                            </div>
+                            <div class="acts__item_note">
+                                <span>Примечание:</span> Соглашение о Правилах определения страны происхождения товаров
+                                в Содружестве Независимых Государств. Правила определения страны происхождения товаров в
+                                СНГ
+                            </div>
+                            <div class="acts__item_for-who">
+                                Всем
+                            </div>
+                        </div>
                     </div>
+                    <div class="acts__item">
+                        <div class="acts__item_title">Договор о Евразийском экономическом союзе</div>
+                        <div class="acts__item_type">МЕЖДУНАРОДНЫЕ КОНВЕНЦИИ, СОГЛАШЕНИЯ, РЕШЕНИЯ, ДОГОВОРЫ И
+                            СТАНДАРТЫ
+                        </div>
+                        <div class="acts__item_details">
+                            <div class="acts__item_details_doc"><span>Вид документа:</span> Договор о Евразийском
+                                экономическом союзе
+                            </div>
+                            <div class="acts__item_details_org"><span>Подписан в:</span> г. Астане</div>
+                            <div class="acts__item_details_date"><span>Дата принятия, номер:</span> 29.05.2014</div>
+                        </div>
+                        <div class="acts__item_note">
+                            <span>Примечание:</span> Особо смотреть Раздел XXII «Государственные (муниципальные)
+                            закупки» и Приложение 25 «Протокол о порядке регулирования закупок»
+                        </div>
+                        <div class="acts__item_for-who">
+                            Основное
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="#" class="pagination__link pagination__link--disabled">&laquo;&laquo;</a>
+                    <a href="#" class="pagination__link pagination__link--disabled">&laquo;</a>
+                    <a href="#" class="pagination__link pagination__link--active">1</a>
+                    <a href="#" class="pagination__link">2</a>
+                    <a href="#" class="pagination__link">3</a>
+                    <a href="#" class="pagination__link">4</a>
+                    <a href="#" class="pagination__link">&raquo;</a>
+                    <a href="#" class="pagination__link">&raquo;&raquo;</a>
                 </div>
             </section>
         </div>
@@ -403,40 +537,67 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
 <script>
+    function updateClearButtonVisibility() {
+        $('.clear-btn').toggle($('.filter__settings__dropdown__field input[type="checkbox"]:checked').length > 0);
+    }
+
+    // Функция обновления видимости кнопок очистки фильтров для конкретного списка
+    function updateClearButtonVisibilityInList(listId) {
+        $(listId + ' .clear-filter-btn').toggle($(listId + ' input[type="checkbox"]:checked').length > 0);
+    }
+
+    // Функция обновления текста кнопки с количеством выбранных чекбоксов
+    function updateFilterButtonCount() {
+        $('.filter__settings__item .filter__settings__btn').each(function () {
+            const count = $(this).next('.filter__settings__dropdown').find('input[type="checkbox"]:checked').length;
+            $(this).find('.count').text(count > 0 ? ' (' + count + ')' : '');
+        });
+    }
+
     $(document).ready(function () {
-        $('.mobile-menu-toggle').click(function () {
-            $('.navigation__list').toggleClass('active');
-            $('.overlay').toggleClass('active');
-            $('body').toggleClass('hide-overflow');
-        });
-        $('.overlay').click(function () {
-            $('.navigation__list').toggleClass('active');
-            $('.overlay').toggleClass('active');
-            $('body').toggleClass('hide-overflow');
-        });
-        $('.menu-close').click(function () {
-            $('.navigation__list').toggleClass('active');
-            $('.overlay').toggleClass('active');
-            $('body').toggleClass('hide-overflow');
-        })
-        $('.filter__settings__item').mouseenter(function () {
-            $(this).find('.filter__settings__dropdown').css('display', 'block');
-        }).mouseleave(function () {
-            $(this).find('.filter__settings__dropdown').css('display', 'none');
+        // Скрытие кнопок очистки фильтров при загрузке страницы
+        $('.clear-btn').hide();
+        $('.clear-filter-btn').hide();
+
+        // Обновление видимости кнопок очистки фильтров при изменении состояния чекбоксов
+        $('.filter__settings__dropdown__field input[type="checkbox"]').change(function () {
+            updateFilterButtonCount();
+            updateClearButtonVisibility();
+            updateClearButtonVisibilityInList('#' + $(this).closest('.filter__settings__dropdown').attr('id'));
         });
 
-        $('.filter__settings__item_big .filter__settings__dropdown__field:gt(7)').hide();
+        // Обработчик клика по кнопке очистки фильтра
+        $('.clear-filter-btn').click(function () {
+            var listId = '#' + $(this).closest('.filter__settings__dropdown').attr('id');
+            $(listId + ' input[type="checkbox"]').prop('checked', false);
+            updateFilterButtonCount();
+            updateClearButtonVisibility();
+            updateClearButtonVisibilityInList(listId);
+        });
 
-        $('.show-all-btn').click(function () {
-            if ($(this).text() === 'Все') {
-                $('.filter__settings__item_big .filter__settings__dropdown__field:gt(7)').show();
-                $(this).text('Скрыть');
-            } else {
-                $('.filter__settings__item_big .filter__settings__dropdown__field:gt(7)').hide();
-                $(this).text('Все');
+        // Обработчик клика по кнопке очистки всех фильтров
+        $('.clear-btn').click(function () {
+            $('.filter__settings__dropdown__field input[type="checkbox"]').prop('checked', false);
+            updateFilterButtonCount();
+            updateClearButtonVisibility();
+            $('.clear-filter-btn').hide();
+        });
+
+        // Обработчики для меню
+        $('.mobile-menu-toggle, .overlay, .menu-close').click(function () {
+            $('.navigation__list, .overlay').toggleClass('active');
+            $('body').toggleClass('hide-overflow');
+        });
+
+        // Показ/скрытие подменю по наведению
+        $('.filter__settings__item').hover(
+            function () {
+                $(this).find('.filter__settings__dropdown').show();
+            },
+            function () {
+                $(this).find('.filter__settings__dropdown').hide();
             }
-        });
-
+        );
     });
 </script>
 </body>

@@ -154,6 +154,12 @@ select {
     font: inherit;
 }
 
+
+.link {
+    color: var(--main-blue);
+    font-weight: bold;
+}
+
 .hide-overflow {
     overflow-y: hidden;
 }
@@ -1285,6 +1291,10 @@ select {
 
 .bold {
     font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 .italic {
@@ -2491,6 +2501,9 @@ select {
     height: 20px;
 }
 
+.npa__info-area {
+    padding-bottom: 20px;
+}
 
 .filter__settings {
     width: 100%;
@@ -2507,7 +2520,7 @@ select {
     color: var(--black);
     align-items: center;
     text-transform: uppercase;
-    gap: 10px;
+    gap: 5px;
     padding: 5px 10px;
 }
 
@@ -2519,7 +2532,31 @@ select {
 
 .filter__settings__dropdown__field {
     margin-bottom: 5px;
+
 }
+
+.filter__settings__dropdown__field label {
+    cursor: pointer;
+}
+
+
+.filter__settings__dropdown::-webkit-scrollbar {
+    width: 10px; /* Ширина скроллбара */
+}
+
+.filter__settings__dropdown::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Цвет фона трека скроллбара */
+}
+
+.filter__settings__dropdown::-webkit-scrollbar-thumb {
+    background: var(--gray-30); /* Цвет ползунка скроллбара */
+    border-radius: 2px;
+}
+
+.filter__settings__dropdown::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-50); /* Цвет ползунка скроллбара при наведении */
+}
+
 
 /* Стили для выпадающего списка */
 .filter__settings__dropdown {
@@ -2530,12 +2567,12 @@ select {
     border: 1px solid #ccc;
     border-top: none;
     border-radius: 0 0 5px 5px;
-    padding: 0 20px;
+    padding: 0 20px 15px 20px;
     display: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: max-content;
     max-height: 350px;
-    max-width: 635px;
+    max-width: 335px;
     overflow-y: auto;
     z-index: 10;
 }
@@ -2547,15 +2584,37 @@ select {
     bottom: 0;
 }
 
-.filter__settings__dropdown_small{
-    padding-bottom: 15px;
-}
+
 .show-all-btn {
     background: none;
     border: none;
-    padding-top:5px;
+    padding-top: 5px;
     color: var(--gray-50);
     font-weight: bold;
+}
+
+.filter__header {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.clear-btn, .clear-filter-btn {
+    color: var(--main-blue);
+    font-weight: bold;
+    text-decoration: underline;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.clear-btn img, .clear-filter-btn img {
+    margin-top: 3px;
+}
+
+.clear-filter-btn {
+    padding: 10px 0 5px 0;
 }
 
 .show-all-btn:hover {
@@ -2568,28 +2627,34 @@ select {
 
 .filter__settings__dropdown__field label {
     line-height: 1rem;
+    position: relative;
+    padding-left: 25px;
 }
 
-/* Стили для кастомного чекбокса */
+/* Скрыть стандартный чекбокс */
 .filter__settings__dropdown input[type="checkbox"] {
-    display: none; /* Скрываем стандартный чекбокс */
+    display: none;
 }
 
 /* Стили для кастомного визуального чекбокса */
+.filter__settings__dropdown input[type="checkbox"] + label {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 30px; /* Добавляем отступ слева */
+    margin-bottom: 5px; /* Добавляем отступ между строками */
+}
+
 .filter__settings__dropdown input[type="checkbox"] + label:before {
     content: "";
-    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     width: 20px;
     height: 20px;
     border: 2px solid #ccc;
     border-radius: 2px;
-    margin-right: 8px;
-    vertical-align: middle;
-}
-
-/* Стили для подсветки кастомного чекбокса при наведении */
-.filter__settings__dropdown input[type="checkbox"] + label:hover:before {
-    border-color: var(--main-blue);
 }
 
 /* Стили для отображения выбранного чекбокса */
@@ -2598,22 +2663,130 @@ select {
     font-size: 14px;
     color: var(--wight); /* Цвет галочки */
     text-align: center;
-    line-height: 16px;
+    line-height: 17px; /* Высота родительского элемента */
     background-color: var(--main-blue);
     border-color: var(--main-blue);
+    position: absolute;
 }
 
+/* Стили для текста label */
+.filter__settings__dropdown input[type="checkbox"] + label:after {
+    content: attr(data-label); /* Добавляем текст из атрибута data-label */
+    display: inline-block;
+}
+
+.filter__header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 2;
+}
 
 .filter__settings__dropdown__title {
     font-weight: bold;
     font-size: 18px;
     padding: 10px 0 5px 0;
     color: var(--gray-50);
-    position: sticky;
-    top: 0;
-    background: white;
 }
 
+.npa__download-area {
+    display: flex;
+    gap: 10px;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.acts {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.acts__item {
+    background-color: #f7f7f7;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.acts__item_title {
+    font-size: 1.2em;
+    line-height: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.acts__item_details_doc span, .acts__item_details_org span, .acts__item_details_date span {
+    color: var(--gray-50);
+    font-weight: bold;
+}
+
+.acts__item_note span {
+    font-weight: bold;
+}
+
+.acts__item_type {
+    text-transform: lowercase;
+    color: var(--gray-50);
+    margin-bottom: 10px;
+    line-height: 1rem;
+}
+
+.acts__item_title {
+    text-transform: uppercase;
+}
+
+.acts__item_details {
+    margin-bottom: 10px;
+}
+
+.acts__item_details strong {
+    margin-right: 5px;
+}
+
+.acts__item_note {
+    font-style: italic;
+}
+
+.acts__item_for-who {
+    color: var(--gray-50);
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination__link {
+    display: inline-block;
+    padding: 5px 13px;
+    margin: 0 4px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.pagination__link:hover {
+    background-color: var(--main-dark-hover);
+    color: var(--wight);
+}
+
+.pagination__link--active {
+    background-color: var(--main-blue);
+    color: #fff;
+    border-color: var(--main-blue);
+}
+
+.pagination__link--disabled {
+    color: #ccc;
+    pointer-events: none;
+}
 
 @media (max-width: 1500px) {
     .question__information {
@@ -3131,6 +3304,9 @@ select {
     .course-card, .seminar-card {
         min-height: 500px;
     }
+    .pagination__link{
+        padding: 1px 7px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -3196,6 +3372,9 @@ select {
 
     .course-registration__background .paragraph {
         font-size: 16px;
+    }
+    .pagination__link{
+        padding: 1px 8px;
     }
 
 }
