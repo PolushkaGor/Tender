@@ -141,6 +141,12 @@ img {
     display: block;
 }
 
+.flex_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 /* Указываем понятную периодичность в потоке данных у article*/
 article > * + * {
     margin-top: 1em;
@@ -2648,7 +2654,7 @@ select {
 .filter__settings__dropdown input[type="checkbox"] + label:before {
     content: "";
     position: absolute;
-    left: 0;
+    left: 1px;
     top: 50%;
     transform: translateY(-50%);
     width: 20px;
@@ -2677,7 +2683,7 @@ select {
 
 .filter__header {
     position: sticky;
-    top: 0;
+    top: -1px;
     background: white;
     z-index: 2;
 }
@@ -3304,7 +3310,8 @@ select {
     .course-card, .seminar-card {
         min-height: 500px;
     }
-    .pagination__link{
+
+    .pagination__link {
         padding: 1px 7px;
     }
 }
@@ -3373,8 +3380,51 @@ select {
     .course-registration__background .paragraph {
         font-size: 16px;
     }
-    .pagination__link{
-        padding: 1px 8px;
+
+    .pagination__link {
+        padding: 1px 5px;
+    }
+
+    .npa__download-area {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 5px;
+        margin: 10px 0;
+    }
+
+    .main__button_sx {
+        padding: 5px;
+        width: 100%;
+    }
+
+    .filter__settings {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .filter__settings__item {
+        width: 100%;
+
+    }
+
+    .filter__settings__dropdown {
+        max-width: 100%;
+    }
+
+    .filter__settings__btn {
+        justify-content: space-between;
+    }
+
+    .filter__header {
+        flex-direction: column;
+        gap: 0;
+        left: -1px;
+        width: 100%;
+    }
+
+    .clear-filter-btn {
+        padding: 2px 0;
+        margin-bottom: 15px;
     }
 
 }
