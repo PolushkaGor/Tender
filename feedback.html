@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Разрешительные документы</title>
+    <title>Обратная связь</title>
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
 
     <meta property="og:title" content="Tender">
-    <meta property="og:description" content="Разрешительные документы">
+    <meta property="og:description" content="Обратная связь">
     <meta property="og:image" content="https://example.com/image.jpg">
     <meta property="og:url" content="https://example.com/">
 </head>
@@ -32,7 +33,6 @@
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
-
             <ul class="navigation__list">
                 <li class="navigation__item__menu">
                     <img alt="logo" src="static/Logo.svg" class="menu__logo">
@@ -50,7 +50,6 @@
                         <li class="submenu__item"><a href="photo_gallery.html">Фотогалерея</a></li>
                     </ul>
                 </li>
-
                 <li class="navigation__item">
                     <p class="navigation__item__text">
                         <a href="magazine.html" class="navigation__item__text">Журнал</a>
@@ -128,7 +127,7 @@
     <div class="main__container">
         <div class="container container__main container__inform">
             <section class="hot-links__section">
-                <a  class="hot-links__link" href="subscription.html">
+                <a class="hot-links__link" href="subscription.html">
                     <div class="hot-links__link hot-links__link_subscription">
                         <span class="hot-links__link__text">Подписка</span></div>
                 </a>
@@ -139,28 +138,55 @@
                     <span class="hot-links__link__text">ВДНХ</span>
                 </div>
             </section>
-            <section class="permits__section">
-                <h2 class="section__header permits__header">
-                    Разрешительные документы
-                </h2>
-                <div class="permits">
-                    <div class="permits__item">
-                        <img class="permits__item__img" src="./static/permits/p11.jpg" alt="permit_photo">
-                        <p class="permits__item__text">Свидетельство о государственной регистрации средства массовой
-                            информации</p>
+            <section>
+                <div class="course-registration__container">
+                    <div class="course-registration__background">
+                        <h3 class="course-registration__background__title">
+                            Форма обратной связи
+                        </h3>
+                        <p class="paragraph">Здесь вы можете оставить свои комментарии, вопросы или предложения. Мы
+                            всегда рады услышать ваше мнение и помочь вам решить любые возникшие вопросы.</p>
+                        <p class="paragraph big text_center bold">Не ждите, действуйте прямо сейчас!</p>
+                        <p class="paragraph">А если у вас возникнут вопросы, не стесняйтесь позвонить нам по телефону:
+                        <p class="text_center big"><a class="tel" href="tel:+3750172151048">+375 (017) 215-10-48</a></p>
+                        <p class="text_center big"><a class="tel" href="tel:+3750172365966">+375 (017) 236-59-66</a></p>
+                        <p class="text_center big"><a class="tel" href="tel:+3750173236685">+375 (017) 323-66-85</a></p>
+                        </p>
                     </div>
-                    <div class="permits__item">
-                        <img class="permits__item__img" src="./static/permits/p11.jpg" alt="permit_photo">
-                        <p class="permits__item__text">Название документа</p>
-                    </div>
-                    <div class="permits__item">
-                        <img class="permits__item__img" src="./static/news/business-people-group-with-young-adults-and-senior-on-meeting-at-modern-bright-office-interior_530697-13151-transformed.jpeg" alt="permit_photo">
-                        <p class="permits__item__text">Название документа</p>
+                    <div class="course-registration__form">
+                        <h3 class="course-registration__title">Оставьте свой вопрос, комментарий или предложение</h3>
+                        <form action="#" method="POST" class="course-registration__form-fields">
+                            <div class="course-registration__input-group">
+                                <label for="ur-name" class="course-registration__label"> Полное наименование
+                                    юридического лица*:</label>
+                                <input type="text" id="ur-name" name="ur-name" class="course-registration__input"
+                                       required>
+                            </div>
+                            <div class="course-registration__input-group">
+                                <label for="full-name" class="course-registration__label">ФИО, уполномоченного в
+                                    установленном порядке подписывать обращения*:</label>
+                                <input type="text" id="full-name" name="full-name" class="course-registration__input"
+                                       required>
+                            </div>
+                            <div class="course-registration__input-group">
+                                <label for="phone" class="course-registration__label">Телефон*:</label>
+                                <input type="tel" id="phone" name="phone" class="course-registration__input" required>
+                            </div>
+                            <div class="course-registration__input-group">
+                                <label for="email" class="course-registration__label">Email*:</label>
+                                <input type="email" id="email" name="phone" class="course-registration__input" required>
+                            </div>
+                            <div class="course-registration__input-group">
+                                <label for="comment" class="course-registration__label">Комментарий:</label>
+                                <textarea id="comment" name="comment" class="course-registration__textarea" rows="7"
+                                          cols="50"></textarea>
+                            </div>
+                            <button type="submit" class="course-registration__submit-button">Отправить заявку</button>
+                        </form>
                     </div>
                 </div>
             </section>
         </div>
-
         <div class="banner__section">
             <img src="./static/banners/banner_1.jpg" alt="Боковой баннер">
         </div>
@@ -257,6 +283,7 @@
     </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
 <script>
     $(document).ready(function () {
         $('.mobile-menu-toggle').click(function () {
@@ -275,7 +302,6 @@
             $('body').toggleClass('hide-overflow');
         })
     });
-
 </script>
 </body>
 </html>

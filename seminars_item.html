@@ -22,8 +22,8 @@
             <p class="logo__text">Еженедельный специализированный журнал</p>
         </div>
         <div class="contact__section">
-            <a>Обратная связь</a>
-            <a>Контакты</a>
+            <a href="feedback.html">Обратная связь</a>
+            <a href="contacts.html">Контакты</a>
         </div>
     </div>
     <nav class="navigation__section">
@@ -129,8 +129,10 @@
     <div class="main__container">
         <div class="container container__main container__inform">
             <section class="hot-links__section">
-                <div class="hot-links__link hot-links__link_subscription">
-                    <span class="hot-links__link__text">Подписка</span></div>
+                <a  class="hot-links__link" href="subscription.html">
+                    <div class="hot-links__link hot-links__link_subscription">
+                        <span class="hot-links__link__text">Подписка</span></div>
+                </a>
                 <div class="hot-links__link hot-links__link_gos">
                     <span class="hot-links__link__text">Госснаб</span>
                 </div>
@@ -504,7 +506,14 @@
                             ЗАКУПКАМИ НА КОНКУРСНОЙ ОСНОВЕ»</h3>
                         <form action="#" method="POST" class="course-registration__form-fields">
                             <div class="course-registration__input-group">
-                                <label for="full-name" class="course-registration__label">ФИО*:</label>
+                                <label for="ur-name" class="course-registration__label"> Полное наименование
+                                    юридического лица*:</label>
+                                <input type="text" id="ur-name" name="ur-name" class="course-registration__input"
+                                       required>
+                            </div>
+                            <div class="course-registration__input-group">
+                                <label for="full-name" class="course-registration__label">ФИО, уполномоченного в
+                                    установленном порядке подписывать обращения*:</label>
                                 <input type="text" id="full-name" name="full-name" class="course-registration__input"
                                        required>
                             </div>

@@ -22,8 +22,8 @@
             <p class="logo__text">Еженедельный специализированный журнал</p>
         </div>
         <div class="contact__section">
-            <a>Обратная связь</a>
-            <a>Контакты</a>
+            <a href="feedback.html">Обратная связь</a>
+            <a href="contacts.html">Контакты</a>
         </div>
     </div>
     <nav class="navigation__section">
@@ -174,6 +174,65 @@
                             страницах сайта, привлекая внимание к вашему объявлению.</p>
                         <div class="advertising__price "><p class="price">38 BYN </p>
                             <p>за неделю (1 номер)</p></div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="course-registration__container">
+                    <div class="course-registration__background">
+                        <h3 class="course-registration__background__title">
+                            Желаете разместить рекламу на сайте?
+                        </h3>
+                        <p class="paragraph">Разместите вашу рекламу на нашем сайте и получите преимущество перед
+                            конкурентами.</p>
+                        <p class="paragraph big text_center bold">Не ждите, действуйте прямо сейчас!</p>
+                        <p class="paragraph">А если у вас возникнут вопросы, не стесняйтесь позвонить нам по телефону:
+                        <p class="text_center big"><a class="tel" href="tel:+3750172151048">+375 (017) 215-10-48</a></p>
+                        <p class="text_center big"><a class="tel" href="tel:+3750172365966">+375 (017) 236-59-66</a></p>
+                        <p class="text_center big"><a class="tel" href="tel:+3750173236685">+375 (017) 323-66-85</a></p>
+                        </p>
+                    </div>
+                    <div class="course-registration__form">
+                        <h3 class="course-registration__title">Оставьте заявку на размещение рекламы на сайте</h3>
+                        <form action="#" method="POST" class="course-registration__form-fields">
+                            <div class="course-registration__input-group">
+                                <label for="ur-name" class="course-registration__label"> Полное наименование
+                                    юридического лица*:</label>
+                                <input type="text" id="ur-name" name="ur-name" class="course-registration__input"
+                                       required>
+                            </div>
+                            <div class="course-registration__input-group">
+                                <label for="full-name" class="course-registration__label">ФИО, уполномоченного в установленном порядке подписывать обращения*:</label>
+                                <input type="text" id="full-name" name="full-name" class="course-registration__input"
+                                       required>
+                            </div>
+                            <div class="course-registration__input-group">
+                                <label for="course-date-city" class="course-registration__label">Вид рекламы</label>
+                                <select class="course-registration__select" name="course-date-city"
+                                        id="course-date-city">
+                                    <option value="" disabled selected>Вид рекламы</option>
+                                    <option value="Растяжка сквозная (1920x60)">Растяжка сквозная (1920x60)</option>
+                                    <option value="21-24 мая Минск">Баннер (50x250)</option>
+                                    <option value="11-14 июня Минск">Баннер (50x125)</option>
+                                    <option value="9-12 июля Минск">Баннер (50x60)</option>
+                                </select>
+
+                            </div>
+                            <div class="course-registration__input-group">
+                                <label for="phone" class="course-registration__label">Телефон*:</label>
+                                <input type="tel" id="phone" name="phone" class="course-registration__input" required>
+                            </div>
+                            <div class="course-registration__input-group">
+                                <label for="email" class="course-registration__label">Email*:</label>
+                                <input type="email" id="email" name="phone" class="course-registration__input" required>
+                            </div>
+                            <div class="course-registration__input-group">
+                                <label for="comment" class="course-registration__label">Комментарий:</label>
+                                <textarea id="comment" name="comment" class="course-registration__textarea" rows="7"
+                                          cols="50"></textarea>
+                            </div>
+                            <button type="submit" class="course-registration__submit-button">Отправить заявку</button>
+                        </form>
                     </div>
                 </div>
             </section>
