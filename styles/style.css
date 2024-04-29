@@ -3732,18 +3732,10 @@ th {
 
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
     .table-wrapper {
-        width: 90%;
+        width: 100%;
+        position: relative;
         overflow-x: auto;
-    }
-
-    .offers__item {
-        min-width: 200px;
-        max-width: 280px;
-    }
-    .container {
-        margin-left: 10px;
-        margin-right: 10px;
     }
 }
