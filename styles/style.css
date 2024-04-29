@@ -3003,11 +3003,11 @@ th, td {
     padding: 8px;
     text-align: left;
     hyphens: auto;
+    word-wrap: break-word;
 }
 
 th {
     background-color: #f2f2f2;
-    hyphens: auto;
 }
 
 .contact__section a:hover {
