@@ -3612,6 +3612,7 @@ th {
     }
 }
 
+
 @media (max-width: 576px) {
     .gallery__images {
         display: grid;
@@ -3728,14 +3729,17 @@ th {
         margin-bottom: 15px;
     }
 
+
+}
+
+@media (max-width: 380px) {
     .table-wrapper {
         width: 90%;
         overflow-x: auto;
     }
-    .offers__item{
-        min-width: 280px;
+
+    .offers__item {
+        min-width: 200px;
+        max-width: 280px;
     }
-
-
 }
-
