@@ -3641,7 +3641,7 @@ th {
     }
 
     .container__main {
-        width: 100%;
+        width: calc(100% - 60px);
     }
 
     .banner__section {
@@ -3734,11 +3734,6 @@ th {
 
 @media (max-width: 480px) {
     .table-wrapper {
-        width: calc(100% - 60px);
-        position: relative;
         overflow-x: auto;
-    }
-    .w-50{
-        width: 50%;
     }
 }
