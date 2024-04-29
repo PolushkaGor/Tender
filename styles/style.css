@@ -3738,4 +3738,7 @@ th {
         position: relative;
         overflow-x: auto;
     }
+    .w-50{
+        width: 50%;
+    }
 }
