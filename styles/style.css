@@ -3003,7 +3003,11 @@ th, td {
     padding: 8px;
     text-align: left;
     hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
     word-wrap: break-word;
+    white-space: pre-wrap;
 }
 
 th {
@@ -3723,6 +3727,15 @@ th {
         padding: 2px 0;
         margin-bottom: 15px;
     }
+
+    .table-wrapper {
+        width: 90%;
+        overflow-x: auto;
+    }
+    .offers__item{
+        min-width: 280px;
+    }
+
 
 }
 
